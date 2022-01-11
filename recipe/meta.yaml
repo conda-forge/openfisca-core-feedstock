@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - openfisca = openfisca_core.scripts.openfisca_command:main
@@ -30,6 +30,7 @@ requirements:
     - numexpr >=2.7.0,<=3.0
     - numpy >=1.11,<1.21
     - psutil >=5.4.7,<6.0.0
+    - pytest >=4.4.1,<6.0.0
     - PyYAML >=3.10
     - sortedcontainers ==2.2.2
     - typing-extensions ==3.10.0.2
@@ -41,7 +42,7 @@ test:
     - openfisca_core
     - openfisca_core.commons
   requires:
-    - pytest <6.0.0,>=4.4.1
+    - pytest >=4.4.1,<6.0.0
     - pip
   commands:
     - pip check
@@ -56,7 +57,9 @@ about:
   summary: "A versatile microsimulation free software"
   doc_url: https://openfisca.org
   dev_url: https://github.com/openfisca/openfisca-core/
-
+  description: |
+    This package contains the core features of OpenFisca, which are meant to be used by country packages such as OpenFisca-France.
+    Bootstrapping your own country package should not take more than 5 minutes: check our country package template.
 extra:
   recipe-maintainers:
     # GitHub IDs for maintainers of the recipe.

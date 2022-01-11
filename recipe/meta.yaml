@@ -18,7 +18,6 @@ build:
     - openfisca = openfisca_core.scripts.openfisca_command:main
     - openfisca-run-test = openfisca_core.scripts.openfisca_command:main
 
-
 requirements:
   host:
     - python
@@ -34,8 +33,6 @@ requirements:
     - PyYAML >=3.10
     - sortedcontainers ==2.2.2
     - typing-extensions ==3.10.0.2
-
-
 
 test:
   imports:
@@ -57,7 +54,7 @@ about:
   summary: "A versatile microsimulation free software"
   doc_url: https://openfisca.org
   dev_url: https://github.com/openfisca/openfisca-core/
-  description: : This package contains the core features of OpenFisca, which are meant to be used by country packages such as OpenFisca-France.
+  description: This package contains the core features of OpenFisca, which are meant to be used by country packages such as OpenFisca-France.
 
 extra:
   recipe-maintainers:

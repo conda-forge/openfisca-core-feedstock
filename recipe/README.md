@@ -15,9 +15,11 @@ That require to :
 - Make a PR to the master of original repository
 
 ## How to update
-- Edit the meta.yaml fork at XXX
+- Edit the meta.yaml fork at https://github.com/openfisca/openfisca-core-feedstock/
   - Update the package version
   - Update the sha256:
     - `curl -sL https://pypi.io/packages/source/O/OpenFisca-Core/OpenFisca-Core-35.7.6.tar.gz | openssl sha256`
     - Copy the hash in the `sha256` field of meta.yaml
 - Make a PR to the master of original repository
+
+Docs on how to have also the openfisca-core-api package : https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html#transition-guide and https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#outputs-section and https://github.com/conda-forge/matplotlib-feedstock/blob/5af510232c2fa984e981e3eeb18128a6cab41b6d/recipe/meta.yaml#L69-L82

@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - openfisca = openfisca_core.scripts.openfisca_command:main
@@ -45,6 +45,21 @@ test:
     - pip check
     - openfisca --help
     - openfisca-run-test --help
+
+outputs:
+  - name: openfisca-core
+
+  - name: openfisca-core-api
+    requirements:
+      host:
+        - python
+      run:
+        - python >=3.6,<4.0
+        - flask ==1.1.2
+        - flask-cors ==3.0.10
+        - gunicorn >=20.0.0,<21.0.0
+        - werkzeug >=1.0.0,<2.0.0
+        - {{ pin_subpackage('openfisca-core', exact=True) }}
 
 about:
   home: https://openfisca.org

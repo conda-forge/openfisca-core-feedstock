@@ -13,6 +13,8 @@ Development: https://github.com/openfisca/openfisca-core/
 
 Documentation: https://openfisca.org
 
+This package contains the core features of OpenFisca, which are meant to be used by country packages such as OpenFisca-France.
+
 Current build status
 ====================
 
@@ -32,6 +34,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-openfisca--core-green.svg)](https://anaconda.org/conda-forge/openfisca-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openfisca-core.svg)](https://anaconda.org/conda-forge/openfisca-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openfisca-core.svg)](https://anaconda.org/conda-forge/openfisca-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openfisca-core.svg)](https://anaconda.org/conda-forge/openfisca-core) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-openfisca--core--api-green.svg)](https://anaconda.org/conda-forge/openfisca-core-api) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openfisca-core-api.svg)](https://anaconda.org/conda-forge/openfisca-core-api) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openfisca-core-api.svg)](https://anaconda.org/conda-forge/openfisca-core-api) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openfisca-core-api.svg)](https://anaconda.org/conda-forge/openfisca-core-api) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-openfisca--core--dev-green.svg)](https://anaconda.org/conda-forge/openfisca-core-dev) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openfisca-core-dev.svg)](https://anaconda.org/conda-forge/openfisca-core-dev) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openfisca-core-dev.svg)](https://anaconda.org/conda-forge/openfisca-core-dev) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openfisca-core-dev.svg)](https://anaconda.org/conda-forge/openfisca-core-dev) |
 
 Installing openfisca-core
 =========================
@@ -43,10 +47,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `openfisca-core` can be installed with:
+Once the `conda-forge` channel has been enabled, `openfisca-core, openfisca-core-api, openfisca-core-dev` can be installed with:
 
 ```
-conda install openfisca-core
+conda install openfisca-core openfisca-core-api openfisca-core-dev
 ```
 
 It is possible to list all of the versions of `openfisca-core` available on your platform with:
@@ -120,5 +124,9 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@MattiSG](https://github.com/MattiSG/)
+* [@benjello](https://github.com/benjello/)
 * [@benoit-cty](https://github.com/benoit-cty/)
+* [@eraviart](https://github.com/eraviart/)
+* [@sandcha](https://github.com/sandcha/)
 

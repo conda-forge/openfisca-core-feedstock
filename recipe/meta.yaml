@@ -1,5 +1,5 @@
 {% set name = "OpenFisca-Core" %}
-{% set version = "35.7.6" %}
+{% set version = "35.7.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2e199a2a504625393f17dd26c363d3af1eda4f78a0470e40a87b2d9684bb0724
+  sha256: 4c0d58106fe961470602680a9f60c7ceaa6473dcf8dec1da3ed737bbbec51d6c
 
 
 build:
   noarch: python
-  number: 4
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - openfisca = openfisca_core.scripts.openfisca_command:main
     - openfisca-run-test = openfisca_core.scripts.openfisca_command:main
@@ -89,7 +89,7 @@ about:
   license_family: AGPL
   license: AGPL-3.0-only
   license_file: LICENSE
-  summary: "A versatile microsimulation free software"
+  summary: A versatile microsimulation free software
   doc_url: https://openfisca.org
   dev_url: https://github.com/openfisca/openfisca-core/
   description: This package contains the core features of OpenFisca, which are meant to be used by country packages such as OpenFisca-France.

@@ -1,5 +1,5 @@
 {% set name = "OpenFisca-Core" %}
-{% set version = "35.8.3" %}
+{% set version = "35.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4816613b00181d347755aeaefae60d6b1a32dba12b4d5b6267cc0bcdd064af2c
+  sha256: ba20edad21b30efbc5d2803847d7a4e2a5f4ff484a5ea5f97140661b38f627ce
 
 
 build:

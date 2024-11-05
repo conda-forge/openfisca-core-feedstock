@@ -1,11 +1,11 @@
-About openfisca-core
-====================
+About openfisca-core-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openfisca-core-feedstock/blob/main/LICENSE.txt)
 
 Home: https://openfisca.org
 
 Package license: AGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openfisca-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: A versatile microsimulation free software
 
